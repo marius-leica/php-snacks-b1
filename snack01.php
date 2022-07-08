@@ -72,7 +72,11 @@ $nbaCalendar = [
                 <tr>
                     <th>Home</th>
                     <th>Guest</th>
+                    <th></th>
+
                     <th>Home Points</th>
+                    <th></th>
+
                     <th>Guest Points</th>
                 </tr>
             </thead>
@@ -81,7 +85,9 @@ $nbaCalendar = [
                     <tr>
                         <td><?= $game['home'] ?></td>
                         <td><?= $game['guest'] ?></td>
+                        <td>|</td>
                         <td><?= $game['homePoints'] ?></td>
+                        <td>-</td>
                         <td><?= $game['guestPoints'] ?></td>
 
                     </tr>

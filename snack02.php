@@ -58,6 +58,16 @@ $validAge = is_numeric($age) !== false && $age > 0 && $age < 120;
                     </div>
                 </div>
 
+                <?php if (!$validName || !$validEmail || !$validAge) : ?>
+                    <div class="alert alert-danger" role="alert">
+                        Access denied
+                    </div>
+                <?php else : ?>
+                    <div class="alert alert-success" role="alert">
+                        Access granted
+                    </div>
+                <?php endif; ?>
+
                 <button class="btn btn-primary" type="submit">Sent</button>
 
             </form>
